@@ -97,7 +97,7 @@ public class MyBatisCRUDController {
 		
 		return IMoocJSONResult.ok(userList);
 	}
-	
+	//自定义mapper 功能
 	@RequestMapping("/queryUserByIdCustom")
 	public IMoocJSONResult queryUserByIdCustom(String userId) {
 		
