@@ -3,6 +3,7 @@ package com.imooc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import tk.mybatis.spring.annotation.MapperScan;
@@ -16,6 +17,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 @EnableScheduling
 //开启异步调用方法
 @EnableAsync
+//开启hibernate
+@EnableJpaRepositories
 public class SpringbootApplication {
 
 	public static void main(String[] args) {
